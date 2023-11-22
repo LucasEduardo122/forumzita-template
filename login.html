@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
+                <a href="#"
+                    class="d-flex nav me-auto align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img class="bi me-2" width="60px" height="52px" src="./img/zitalogo.png" alt="zitalogo">itabot
+                </a>
+
+                <div class="flex flex-x flex--spacing-2 flex-items-center text-end">
+                    <a href="#" class="c-notification-indicator">
+                        <svg fill="none" stroke="currentColor" class="h-6 text-gray-500" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9" />
+                        </svg>
+                    </a>
+                    <div class="c-menu-user">
+                        <div class="c-dropdown">
+                            <button type="button" class="c-dropdown__handle dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false"><img class="c-avatar h-8 w-8" alt="lector133"
+                                    src="https://forumzita.cloudlector.xyz/static/images/avatars/EP9E9f5tF61fiWIo3HKsltaXZfh9keQDLpsXa8iMPJRhfstwgo0U4CIUpVD4B45d-img-20230529-wa0009-1.jpg?size=50"></button>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <p class="text-uppercase text-start fw-bold p-2"
+                                        style="font-weight: 500 !important; margin-bottom: -5px;">Nick do user</p>
+                                </li>
+                                <li><a class="dropdown-item p-8" href="#">Configurações</a></li>
+
+                                <li>
+                                    <p class="text-uppercase text-start fw-bold p-2"
+                                        style="font-weight: 500 !important; margin-bottom: -5px;">Administração</p>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Configurações do site</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center"
+                                        href="#">
+                                        <i width="16" height="16" class="bi-door-open"></i>
+                                        Sair
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form>
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                  <p class="lead fw-normal mb-0 me-3">Login</p>
+                </div>
+      
+                <div class="divider d-flex align-items-center my-4">
+                  <p class="text-center fw-bold mx-3 mb-0"></p>
+                </div>
+      
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                  <input type="email" id="form3Example3" class="form-control form-control-lg"
+                    placeholder="Email" />
+                </div>
+      
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                  <input type="password" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="Senha" />
+                </div>
+      
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-0">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                    <label class="form-check-label" for="form2Example3">
+                      Remember me
+                    </label>
+                  </div>
+                  <a href="#!" class="text-body">Perdeu a senha?</a>
+                </div>
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" class="c-button c-button--default c-button--primary shadow-sm"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Entrar</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Não tem uma conta? <a href="#!"
+                      class="link-danger">Registrar</a></p>
+                </div>
+      
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+</body>
+
+</html>

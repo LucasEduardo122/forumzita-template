@@ -1,0 +1,344 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
+                <a href="#"
+                    class="d-flex nav me-auto align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img class="bi me-2" width="60px" height="52px" src="./img/zitalogo.png" alt="zitalogo">itabot
+                </a>
+
+                <div class="flex flex-x flex--spacing-2 flex-items-center text-end">
+                    <a href="/notifications" class="c-notification-indicator">
+                        <svg fill="none" stroke="currentColor" class="h-6 text-gray-500" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9" />
+                        </svg>
+                    </a>
+                    <div class="c-menu-user">
+                        <div class="c-dropdown">
+                            <button type="button" class="c-dropdown__handle dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false"><img class="c-avatar h-8 w-8" alt="lector133"
+                                    src="https://forumzita.cloudlector.xyz/static/images/avatars/EP9E9f5tF61fiWIo3HKsltaXZfh9keQDLpsXa8iMPJRhfstwgo0U4CIUpVD4B45d-img-20230529-wa0009-1.jpg?size=50"></button>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <p class="text-uppercase text-start fw-bold p-2"
+                                        style="font-weight: 500 !important; margin-bottom: -5px;">Nick do user</p>
+                                </li>
+                                <li><a class="dropdown-item p-8" href="#">Configurações</a></li>
+
+                                <li>
+                                    <p class="text-uppercase text-start fw-bold p-2"
+                                        style="font-weight: 500 !important; margin-bottom: -5px;">Administração</p>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Configurações do site</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center"
+                                        href="#">
+                                        <i width="16" height="16" class="bi-door-open"></i>
+                                        Sair
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- <section style="background-color: #fff;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb" class="bg-light rounded-3 p-3 mb-4">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">User</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                                alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                            <h5 class="my-3">John Smith</h5>
+                            <p class="text-muted mb-1">Full Stack Developer</p>
+                            <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <button type="button" class="btn btn-primary">Follow</button>
+                                <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush rounded-3">
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fas fa-globe fa-lg text-warning"></i>
+                                    <p class="mb-0">https://mdbootstrap.com</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                                    <p class="mb-0">mdbootstrap</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                                    <p class="mb-0">@mdbootstrap</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                                    <p class="mb-0">mdbootstrap</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                    <p class="mb-0">mdbootstrap</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Full Name</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">Johnatan Smith</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Email</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">example@example.com</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Phone</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">(097) 234-5678</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Mobile</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">(098) 765-4321</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <p class="mb-0">Address</p>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="card-body">
+                                    <p class="mb-4"><span class="text-primary font-italic me-1">assigment</span> Project
+                                        Status
+                                    </p>
+                                    <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 72%"
+                                            aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 89%"
+                                            aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 55%"
+                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                                    <div class="progress rounded mb-2" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 66%"
+                                            aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card mb-4 mb-md-0">
+                                <div class="card-body">
+                                    <p class="mb-4"><span class="text-primary font-italic me-1">assigment</span> Project
+                                        Status
+                                    </p>
+                                    <p class="mb-1" style="font-size: .77rem;">Web Design</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%"
+                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Website Markup</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 72%"
+                                            aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">One Page</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 89%"
+                                            aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Mobile Template</p>
+                                    <div class="progress rounded" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 55%"
+                                            aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <p class="mt-4 mb-1" style="font-size: .77rem;">Backend API</p>
+                                    <div class="progress rounded mb-2" style="height: 5px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 66%"
+                                            aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <div id="p-my-settings" class="page container">
+        <div class="mb-4">
+            <div class="text-display2 mb-1">Configurações</div>
+            <div class="text-gray-700">Gerenciar suas configurações de perfil</div>
+        </div>
+        <div class="w-max-7xl">
+            <form autocomplete="off" class="c-form">
+                <div class="c-form-field"><label for="input-email">E-mail<button type="button"
+                            class="c-button c-button--small c-button--tertiary">alterar</button></label>
+                    <div class="relative flex flex-x"><input class="c-input" id="input-email" type="text"
+                            maxlength="200" disabled="" value="moddenver@gmail.com"></div>
+                    <p class="text-muted">O seu e-mail é privado e nunca será exibido publicamente.</p>
+                </div>
+                <div class="c-form-field"><label for="input-name">Nome</label>
+                    <div class="relative flex flex-x"><input class="c-input" id="input-name" type="text" maxlength="100"
+                            value="lector133"></div>
+                </div>
+                <div class="c-form-field"><label for="input-avatarType">Avatar</label><select class="c-select mb-2"
+                        id="input-avatarType">
+                        <option value="letter">Letra</option>
+                        <option value="gravatar">Gravatar</option>
+                        <option value="custom" selected="">Personalizado</option>
+                    </select>
+                    <div class="c-form-field c-image-upload">
+                        <div class="preview h-20"><img alt=""
+                                src="https://forumzita.cloudlector.xyz/static/images/avatars/EP9E9f5tF61fiWIo3HKsltaXZfh9keQDLpsXa8iMPJRhfstwgo0U4CIUpVD4B45d-img-20230529-wa0009-1.jpg"><button
+                                type="button" class="c-button c-button--default c-button--danger shadow-sm">X</button>
+                        </div><input type="file" accept="image/*">
+                        <p class="text-muted">O sistema da zita aceita imagens JPG, GIF e PNG, menores que 100KB e com dimensões mínimas de 50x50 pixels.</p>
+                    </div>
+                </div>
+                <!-- <div class="c-form-field"><label>Notificações</label>
+                    <p class="text-muted">Use o painel a seguir para escolher quais eventos você gostaria de ser
+                        notificado</p>
+                    <div class="notifications-settings">
+                        <div class="p-2 bg-gray-50 rounded flex flex-y flex--divide-4">
+                            <div>
+                                <div class="mb-1">Nova postagem</div>
+                                <p class="text-muted">Você receberá notificações por <strong>web</strong> e
+                                    <strong>e-mail</strong> sobre novas postagens nesse site.</p>
+                                <div class="flex flex-x flex--spacing-6 flex-items-center">
+                                    <div class="flex flex-x flex--spacing-2 flex-items-center"><button type="button"
+                                            class="c-toggle c-toggle--enabled" role="switch"><span aria-hidden="true"
+                                                class="shadow"></span></button><span class="text-sm">Web</span></div>
+                                    <div class="flex flex-x flex--spacing-2 flex-items-center"><button type="button"
+                                            class="c-toggle c-toggle--enabled" role="switch"><span aria-hidden="true"
+                                                class="shadow"></span></button><span class="text-sm">E-mail</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mb-1">Discussão</div>
+                                <p class="text-muted">Você receberá notificações por <strong>web</strong> e
+                                    <strong>e-mail</strong> sobre comentários em todas as postagens, a menos que
+                                    individualmente desinscritas.</p>
+                                <div class="flex flex-x flex--spacing-6 flex-items-center">
+                                    <div class="flex flex-x flex--spacing-2 flex-items-center"><button type="button"
+                                            class="c-toggle c-toggle--enabled" role="switch"><span aria-hidden="true"
+                                                class="shadow"></span></button><span class="text-sm">Web</span></div>
+                                    <div class="flex flex-x flex--spacing-2 flex-items-center"><button type="button"
+                                            class="c-toggle c-toggle--enabled" role="switch"><span aria-hidden="true"
+                                                class="shadow"></span></button><span class="text-sm">E-mail</span></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="mb-1">Alteração de status</div>
+                                <p class="text-muted">Você receberá notificações por <strong>web</strong> e
+                                    <strong>e-mail</strong> sobre alteração de status em todas as postagens, a menos que
+                                    individualmente desinscritas.</p>
+                                <div class="flex flex-x flex--spacing-6 flex-items-center">
+                                    <div class="flex flex-x flex--spacing-2 flex-items-center"><button type="button"
+                                            class="c-toggle c-toggle--enabled" role="switch"><span aria-hidden="true"
+                                                class="shadow"></span></button><span class="text-sm">Web</span></div>
+                                    <div class="flex flex-x flex--spacing-2 flex-items-center"><button type="button"
+                                            class="c-toggle c-toggle--enabled" role="switch"><span aria-hidden="true"
+                                                class="shadow"></span></button><span class="text-sm">E-mail</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <button type="button"
+                    class="c-button c-button--default c-button--primary shadow-sm">Salvar</button>
+            </form>
+            <div class="mt-8">
+                <div>
+                    <h4 class="text-title mb-1">Excluir a conta</h4>
+                    <p class="text-muted">Quando você optar por excluir sua conta, todas as suas informações pessoais
+                        serão removidas para sempre. O conteúdo que você publicou permanecerá, mas será anonimizado.</p>
+                    <p class="text-muted">Este processo é irreversível. Por favor, tenha certeza.</p><button
+                        type="button" class="c-button c-button--small c-button--danger shadow-sm">Excluir minha
+                        conta</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

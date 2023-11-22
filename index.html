@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center">
+                <a href="#"
+                    class="d-flex nav me-auto align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
+                    <img class="bi me-2" width="60px" height="52px" src="./img/zitalogo.png" alt="zitalogo">itabot
+                </a>
+
+                <div class="flex flex-x flex--spacing-2 flex-items-center text-end">
+                    <a href="#" class="c-notification-indicator">
+                        <svg fill="none" stroke="currentColor" class="h-6 text-gray-500" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 17h5l-1.405-1.405A2.032 2.032 0 0 1 18 14.158V11a6.002 6.002 0 0 0-4-5.659V5a2 2 0 1 0-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 1 1-6 0v-1m6 0H9" />
+                        </svg>
+                    </a>
+                    <div class="c-menu-user">
+                        <div class="c-dropdown">
+                            <button type="button" class="c-dropdown__handle dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false"><img class="c-avatar h-8 w-8" alt="lector133"
+                                    src="https://forumzita.cloudlector.xyz/static/images/avatars/EP9E9f5tF61fiWIo3HKsltaXZfh9keQDLpsXa8iMPJRhfstwgo0U4CIUpVD4B45d-img-20230529-wa0009-1.jpg?size=50"></button>
+                            <ul class="dropdown-menu text-small">
+                                <li>
+                                    <p class="text-uppercase text-start fw-bold p-2"
+                                        style="font-weight: 500 !important; margin-bottom: -5px;">Nick do user</p>
+                                </li>
+                                <li><a class="dropdown-item p-8" href="#">Configurações</a></li>
+
+                                <li>
+                                    <p class="text-uppercase text-start fw-bold p-2"
+                                        style="font-weight: 500 !important; margin-bottom: -5px;">Administração</p>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Configurações do site</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item dropdown-item-danger d-flex gap-2 align-items-center"
+                                        href="#">
+                                        <i width="16" height="16" class="bi-door-open"></i>
+                                        Sair
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container text-center d-flex">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <p class="text-start">Gostaríamos de ouvir sobre o que você está pensando.</p>
+                <p class="text-start p-home">O que podemos fazer melhor? Este é o lugar para você votar, discutir e
+                    compartilhar ideias.</p>
+
+                <div class="mb-3 mt-2 d-flex flex-column">
+                    <form autocomplete="off" class="c-form">
+                        <div class="c-form-field">
+                            <div class="relative flex flex-x"><input class="c-input" id="input-title" type="text"
+                                    maxlength="100" placeholder="Insira sua sugestão aqui..." wfd-id="id0"></div>
+                        </div>
+                        <div class="c-form-field rest d-none">
+                            <textarea class="c-textarea" id="input-description"
+                                placeholder="Descreva sua sugestão (opcional)"
+                                style="height: 128px !important;"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="c-button c-button--default c-button--primary shadow-sm float-start">Enviar</button>
+                    </form>
+
+                    <p class="p-home">Powered by Lector</p>
+                </div>
+
+            </div>
+            <div class="col-lg-8 col-md-12 col-sm-12">
+
+                <div class="empty">
+                    <div class="bd-callout bd-callout-info staff">
+                        É recomendável que você crie <strong>pelo menos 3 </strong> sugestões aqui antes de compartilhar
+                        este site. O conteúdo inicial é importante para começar a engajar seu público.
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="120" class="mt-6 mb-2" viewBox="0 0 647.636 632.174"
+                        id="undraw-no-data">
+                        <path
+                            d="M411.146 142.174h-174.51a15.018 15.018 0 0 0-15 15v387.85l-2 .61-42.81 13.11a8.007 8.007 0 0 1-9.99-5.31l-127.34-415.95a8.003 8.003 0 0 1 5.31-9.99l65.97-20.2 191.25-58.54 65.97-20.2a7.99 7.99 0 0 1 9.99 5.3l32.55 106.32Z"
+                            fill="#f2f2f2" />
+                        <path
+                            d="m449.226 140.174-39.23-128.14a16.994 16.994 0 0 0-21.23-11.28l-92.75 28.39-191.24 58.55-92.75 28.4a17.015 17.015 0 0 0-11.28 21.23l134.08 437.93a17.027 17.027 0 0 0 16.26 12.03 16.79 16.79 0 0 0 4.97-.75l63.58-19.46 2-.62v-2.09l-2 .61-64.17 19.65a15.015 15.015 0 0 1-18.73-9.95L2.666 136.734a14.98 14.98 0 0 1 9.95-18.73l92.75-28.4 191.24-58.54 92.75-28.4a15.156 15.156 0 0 1 4.41-.66 15.015 15.015 0 0 1 14.32 10.61l39.05 127.56.62 2h2.08Z"
+                            fill="#3f3d56" />
+                        <path
+                            d="M122.68 127.82a9.016 9.016 0 0 1-8.61-6.366l-12.88-42.072a8.999 8.999 0 0 1 5.97-11.24L283.1 14.278a9.009 9.009 0 0 1 11.24 5.971l12.88 42.072a9.01 9.01 0 0 1-5.97 11.241l-175.94 53.864a8.976 8.976 0 0 1-2.63.395Z"
+                            fill="#4338ca" />
+                        <circle cx="190.154" cy="24.955" r="20" fill="#4338ca" />
+                        <circle cx="190.154" cy="24.955" r="12.665" fill="#fff" />
+                        <path
+                            d="M602.636 582.174h-338a8.51 8.51 0 0 1-8.5-8.5v-405a8.51 8.51 0 0 1 8.5-8.5h338a8.51 8.51 0 0 1 8.5 8.5v405a8.51 8.51 0 0 1-8.5 8.5Z"
+                            fill="#e6e6e6" />
+                        <path
+                            d="M447.136 140.174h-210.5a17.024 17.024 0 0 0-17 17v407.8l2-.61v-407.19a15.018 15.018 0 0 1 15-15h211.12Zm183.5 0h-394a17.024 17.024 0 0 0-17 17v458a17.024 17.024 0 0 0 17 17h394a17.024 17.024 0 0 0 17-17v-458a17.024 17.024 0 0 0-17-17Zm15 475a15.018 15.018 0 0 1-15 15h-394a15.018 15.018 0 0 1-15-15v-458a15.018 15.018 0 0 1 15-15h394a15.018 15.018 0 0 1 15 15Z"
+                            fill="#3f3d56" />
+                        <path
+                            d="M525.636 184.174h-184a9.01 9.01 0 0 1-9-9v-44a9.01 9.01 0 0 1 9-9h184a9.01 9.01 0 0 1 9 9v44a9.01 9.01 0 0 1-9 9Z"
+                            fill="#4338ca" />
+                        <circle cx="433.636" cy="105.174" r="20" fill="#4338ca" />
+                        <circle cx="433.636" cy="105.174" r="12.182" fill="#fff" />
+                    </svg>
+
+                    <p>Nenhuma postagem foi criada ainda.</p>
+                </div>
+
+                <div class="votes-card">
+                    <div class="controlls">
+                        <div class="c-posts-container__header mb-4">
+                            <div class="c-posts-container__filter-col">
+                                <div class="d-flex flex-row flex--spacing-1 align-items-center"><span
+                                        class="text-category">Vendo</span>
+                                    <div class="c-dropdown">
+                                        <button type="button" class="c-dropdown__handle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div
+                                                class="text-medium text-xs uppercase rounded-md uppercase bg-gray-100 px-2 py-1">
+                                                + votados</div>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#"><span>+ votados</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span>+ recentes</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span>+ discutidos</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span>Aceitos</span> <span
+                                                        class="badge bg-danger">20</span></a></li>
+                                            <li><a class="dropdown-item" href="#"><span>Recusados</span> <span
+                                                        class="badge bg-danger">9</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex flex-x flex--spacing-1 flex-items-center">com<div class="c-dropdown">
+                                        <button type="button" class="c-dropdown__handle" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <div
+                                                class="text-medium text-xs uppercase rounded-md uppercase bg-gray-100 px-2 py-1">
+                                                todos</div>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Todos</a></li>
+                                            <li>
+                                                <a class="dropdown-item flex flex-x flex--spacing-2 flex-items-center"
+                                                    href="#">
+                                                    <span title="under discussion" class="c-tag c-tag--circular"
+                                                        style="background-color: rgb(254, 219, 181); color: rgb(51, 51, 51);"></span>
+                                                    <span>Em discussão</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c-posts-container__search-col">
+                                <div class="c-form-field">
+                                    <div class="relative flex flex-x flex-items-center"><input
+                                            class="c-input c-input--icon" id="input-query" type="text"
+                                            placeholder="Pesquisar" value=""><svg class="" viewBox="0 0 24 24">
+                                            <use xlink:href="#heroicons-search"></use>
+                                        </svg></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="votes mb-5">
+                        <div class="flex flex-y flex--divide-4">
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>4</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/483/be-able-to-disable-attachments-from-the-admin-panel">Be
+                                            able to
+                                            disable attachments from the admin panel</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">1 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Maybe, we don't want to accept attachments on
+                                        our
+                                        feedback page. Only text. So, adding an option somewhere in the admin page to
+                                        disable attachments, would be a good option.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>9</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/439/provide-a-dark-mode-that-adapts-to-system-settings">Provide
+                                            a
+                                            dark mode that adapts to system settings</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">1 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">When system environments switch their desktop
+                                        theme
+                                        to adjust for the sunlight contrast reduction at night, browser applications can
+                                        use
+                                        the prefers-color-scheme API to detect such change and adapt their visual
+                                        appearance
+                                        accordingly. This is often referred to as <em>dark mode</em> and could be def...
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>32</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/48/allow-users-to-use-public-tags-when-submitting-new-posts">Allow
+                                            users to use public tags when submitting new posts</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">21 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Allow users to add tag when submitting new
+                                        posts,
+                                        this would allow the platform to be user for more than just ideas.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>31</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/1/add-twitter-as-authentication-method">Add Twitter as
+                                            authentication method</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">1 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Twitter supports OAuth (not v2), which could be
+                                        challenging. But anyway, it would be useful to have the third biggest social
+                                        network
+                                        integrated with Fider. https://dev.twitter.com/oauth</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>34</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/5/allow-admins-to-select-which-sign-in-providers-to-enable">Allow
+                                            admins to select which sign in providers to enable</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">6 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">For instance, GitHub OAuth can be useful for
+                                        some
+                                        people, but not all. We should allow administrators to select which providers
+                                        they
+                                        want to enable. By default only popular ones like Facebook and Google should be
+                                        enabled.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>81</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/14/allow-visitors-to-post-without-having-to-sign-in">Allow
+                                            visitors
+                                            to post without having to sign in</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">32 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">This would help the forums to get more
+                                        contribution,
+                                        but we'll need to think about using an anti-spam system.</p>
+                                    <div class="p-2 shadow rounded">
+                                        <div class="flex flex-x flex--spacing-1 flex-items-center"><span
+                                                class="text-xs">·
+                                                <div class="c-username c-username--staff"><span>Guilherme Oenning</span>
+                                                    <div data-tooltip="Staff"><svg xmlns="http://www.w3.org/2000/svg"
+                                                            viewBox="0 0 20 20" fill="currentColor">
+                                                            <path fill-rule="evenodd"
+                                                                d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                                                clip-rule="evenodd"></path>
+                                                        </svg></div>
+                                                </div>
+                                            </span></div>
+                                        <div class="content">
+                                            <div class="c-markdown ">
+                                                <p>We're planning to have this feature in a near future release. Please
+                                                    come
+                                                    along and share your thoughts on how would you like to see
+                                                    implemented!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex-wrap flex flex-x flex--spacing-1 flex-items-center"><a
+                                            href="/?tags=under-discussion" title="under discussion" class="c-tag"
+                                            style="background-color: rgb(254, 219, 181); color: rgb(51, 51, 51);">em
+                                            discussão</a></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>20</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/16/threaded-comments-on-ideas">Threaded comments on ideas</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">5 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Implement threaded comments like Facebook (one
+                                        level) to allow better discussions within the platform.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>24</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/17/implement-some-different-themes">Implement some different
+                                            themes</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">4 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">The admin should be able to select between
+                                        different
+                                        themes that best match with his Brand. This should also include a Default theme
+                                        that
+                                        is very neutral (not violet) :)</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>10</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/19/integration-with-trello-wekan">Integration with
+                                            Trello/Wekan</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">4 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Open a card for each idea.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>5</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/25/give-feedback-via-chatbot">Give feedback via chatbot</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">3 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Allow users give feedbacks via chatbots on
+                                        Messenger, Slack or Telegram</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>53</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/29/preview-of-markdown-field">Preview of markdown field</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">2 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Because we're using markdown, whatever we input
+                                        might not render the way we expect. There should be a way to preview how the
+                                        description and comment will look like while typing.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>64</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/30/add-internal-notes">Add internal notes</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">3 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Site members should have an internal "Notes" for
+                                        each idea where they can share information privately.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>12</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/31/show-of-total-users-that-voted-on-an-idea">Show % of total
+                                            users
+                                            that voted on an idea</a></div>
+                                    <p class="c-markdown text-gray-600">Aside from showing the total number of voters,
+                                        we
+                                        could show a % of total users that voted on an idea. This is particularly useful
+                                        for
+                                        sites with few users, because an idea could have 100% of users votes even though
+                                        the
+                                        total number of votes is just 5.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>117</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/32/restrict-how-many-ideas-an-user-can-vote">Restrict how many
+                                            ideas an user can vote</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">25 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">Some users might vote on EVERY single idea,
+                                        which
+                                        gives little benefit for administrators. If they had a limited number of votes,
+                                        they'd have to choose wisely what they really want to see implemented.</p>
+                                    <div class="flex-wrap flex flex-x flex--spacing-1 flex-items-center"><a
+                                            href="/?tags=under-discussion" title="under discussion" class="c-tag"
+                                            style="background-color: rgb(254, 219, 181); color: rgb(51, 51, 51);">under
+                                            discussion</a></div>
+                                </div>
+                            </div>
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button class="c-vote-counter__button"><i
+                                                class="bi bi-caret-up-fill"></i>25</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base"
+                                            href="/posts/35/allow-admins-to-ghost-vote">Allow Admins to "Ghost Vote"</a>
+                                        <div class="text-muted flex flex-x flex--spacing-1 flex-items-center">4 <i
+                                                class="ms-2 bi bi-chat"></i></div>
+                                    </div>
+                                    <p class="c-markdown text-gray-600">An possible way how my organization would use
+                                        this
+                                        is that not everyone we talk to will want to come and vote. It'd be great if
+                                        admins
+                                        could someone "upvote" on behalf of a non-registered voter.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-4 ml-4">
+                            <a href="#" class="text-primary-base text-medium hover:underline">Ver mais posts</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="votes-card-exist d-none">
+                    <div class="container">
+                        <div class="mb-4 text-start">
+                            <div class="text-display2 mb-1">Postagens similares</div>
+                            <div class="text-gray-700">Considere votar em postagens existentes.</div>
+                        </div>
+                        <p class="text-center">No similar posts matched 'ipo'.</p>
+                        <div class="flex flex-y flex--divide-4">
+                            <div class="flex flex-x flex--spacing-1 flex-items-center">
+                                <div class="align-self-start">
+                                    <div class="c-vote-counter"><button
+                                            class="c-vote-counter__button c-vote-counter__button--voted"><i
+                                                class="bi bi-caret-up-fill"></i>1</button></div>
+                                </div>
+                                <div class="w-full flex flex-y flex--spacing-2">
+                                    <div class="flex flex-x flex--spacing-1 flex-items-center justify-between"><a
+                                            class="text-title hover:text-primary-base" href="/posts/2/teste-aqui">teste
+                                            aqui</a></div>
+                                    <p class="c-markdown text-gray-600 text-start">tesahkjhkhk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function activeDescription(e) {
+            if (e.target.value.length > 0) {
+                document.querySelector('div.empty').classList.add('d-none')
+                document.querySelector('div.votes-card').classList.add('d-none')
+                document.querySelector('div.rest').classList.remove('d-none')
+                document.querySelector('div.votes-card-exist').classList.remove('d-none')
+            } else if (e.target.value.length == 0) {
+                document.querySelector('div.rest').classList.add('d-none')
+                document.querySelector('div.empty').classList.remove('d-none')
+                document.querySelector('div.votes-card').classList.remove('d-none')
+                document.querySelector('div.votes-card-exist').classList.add('d-none')
+            }
+        }
+
+        document.querySelector('#input-title').addEventListener('input', activeDescription)
+    </script>
+</body>
+
+</html>
